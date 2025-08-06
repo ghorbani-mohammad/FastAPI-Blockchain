@@ -1,0 +1,9 @@
+services:
+  fastapi-blockchain:
+    container_name: fastapi-blockchain
+    build: .
+    ports:
+      - 8935:8935
+    restart: unless-stopped
+    volumes:
+      - ./app.py:/app/app.py
