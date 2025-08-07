@@ -1,6 +1,6 @@
-# MGH Blockchain - Decentralized Mining System
+# MGH Blockchain – Decentralized Mining System
 
-A FastAPI-based blockchain implementation with decentralized mining capabilities, proof of work consensus, and transaction management.
+A prototype for MGH COIN😁. A FastAPI-powered blockchain featuring decentralized mining, proof-of-work consensus, and robust transaction management. This project enables multiple miners to compete in real time, ensuring security, transparency, and efficient block creation.
 
 ## Features
 
