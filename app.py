@@ -50,10 +50,12 @@ def add_transaction(request: TransactionRequest):
 @app.post("/mine")
 def mine_block(request: MiningRequest):
     """Mine a new block - any miner can call this"""
-    result = blockchain.mine_block(request.miner_address)
-    if result["status"] == "error":
-        raise HTTPException(status_code=400, detail=result["message"])
-    return result
+    # Return error message asking users to mine on their end
+    return {
+        "status": "error",
+        "message": "Mining is not allowed on the server. Please mine blocks on your end using the mining information from /mining/info endpoint.",
+        "mining_info": blockchain.get_mining_info(),
+    }
 
 
 @app.get("/mining/info")
