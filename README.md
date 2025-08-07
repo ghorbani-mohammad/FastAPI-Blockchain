@@ -15,7 +15,7 @@ A FastAPI-based blockchain implementation with decentralized mining capabilities
 
 ### Core Components
 
-1. **MGHBlockchain Class**: Individual block structure with nonce and miner information
+1. **Blockchain Class**: Individual block structure with nonce and miner information
 2. **BlockchainManager Class**: Manages the entire blockchain, pending transactions, and mining
 3. **FastAPI Endpoints**: RESTful API for blockchain operations
 
